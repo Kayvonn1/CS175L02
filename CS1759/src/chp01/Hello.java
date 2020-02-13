@@ -18,6 +18,7 @@ public class Hello {
 		
 		System.out.println("x = " + 10);
 		System.out.println("x = + 10");
+		
 	}
 
 }

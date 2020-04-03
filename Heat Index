@@ -1,0 +1,30 @@
+package heatIndex;
+
+public class heatIndex {
+
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+ int T;
+System.out.printf("     ");
+for (T = 80; T<=110;T+=2) 
+{
+System.out.printf("%5d",T);
+}
+System.out.println();
+System.out.println("_______________________________________________________");
+for (int RH = 40; RH <= 100; RH+=5)
+{
+System.out.printf("%2d | ",RH);
+
+for (T = 80; T<=110;T+=2) 
+{
+System.out.printf("%5.0f",(-42.379 + 2.04901523*T + 10.14333127*RH - .22475541*T*RH - .00683783*T*T - .05481717*RH*RH + .00122874*T*T*RH + .00085282*T*RH*RH - .00000199*T*T*RH*RH));
+}
+
+
+System.out.println(); 
+}
+}
+
+
+}

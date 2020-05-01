@@ -3,62 +3,15 @@ package Roach;
 public class Roach {
 
      double population;
-     double spray;
-     double left;
      
-     System.out.println(intialPopulation);
-     System.out.println(package Roach;
+     double spray = (1-spray);
+     
+     double left(population*spary);
+     
+     System.out.println(Population);
+     
+     system.out,println(population*spray);
+     
+     System.out.println(left);
 
-import java.util.Scanner;
-
-public class roachSim {
-	
-	public static void main(String[] args) {
-	
-	Scanner sc = new Scanner(System.in);
-	
-	System.out.println("What is the intial populaiton");
-	
-	double population = sc.nextInt();
-	
-	double pop1 = population*2;
-	
-	double spray1 = .5;
-	
-	float left1 = (float) (pop1*spray1);
-	
-	double pop2 = (left1)*2;
-	
-	double spray2 = .4;
-	
-	float left2 = (float) (pop2*spray2);
-	
-	double pop3 = (left2)*2;
-	
-	double spray3 = .3;
-	
-	float left3 = (float) (pop3*spray3);
-	
-	double pop4 = (spray3*pop3)*2;
-	
-	double spray4 = .2;
-	
-	float left4 = (float) (spray4*pop3);
-	
-	System.out.println("The intial roach population is " + population);
-	System.out.println("The Roach population after cycle 1 is " + pop1);
-	System.out.println("The Roach population after cycle 1 with 50 precent spraying is " + left1);
-	System.out.println("The Roach population after cycle 2 is " + pop2);
-	System.out.println("The Roach population after cycle 2 with 60 precent spraying is " + left2);
-	System.out.println("The Roach population after cycle 3 is "+ pop3);
-	System.out.println("The Roach population after cycle 3 with 70 precent spray is "+ left3);
-	System.out.println("The Roach population after cycle 4 is "+ pop4);
-	System.out.println("The Roach population after cycle 4 with 80 precent spray is " + left4);
-	
-	
-	  
 }
-}
-);
-
-   }

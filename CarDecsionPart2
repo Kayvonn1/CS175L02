@@ -1,0 +1,44 @@
+package Part2;
+import java.util.Scanner;
+public class part2 {
+
+	public static void main(String[] args) {
+	// TODO Auto-generated method stub
+		
+    // Collecting data (Car,Cost,MPG) 
+	Scanner in = new Scanner(System.in);
+	System.out.println("Enter information for the regular car: ");
+	String regCar = in.nextLine();
+	System.out.println("Enter information for the Hybrid car: ");
+	String hybrid = in.nextLine();
+	System.out.println("Enter miles travled in a year");
+	int miles = in.nextInt();
+	System.out.println("Enter cost per gallon: ");
+	double gas = in.nextDouble();
+	
+	//Split
+	String[] regSplit = regCar.split(",");
+	String[] hybridSplit = hybrid.split(",");
+	int regCost = Integer.parseInt(regSplit[1]);
+	int hybridCost = Integer.parseInt(hybridSplit[1]);
+	int regMPG = Integer.parseInt(regSplit[2]);
+	int hybirdMPG = Integer.parseInt(hybridSplit[2]);
+	
+	
+	
+	
+	//Printing information
+	for (int i = 1; i <=5; i++) {
+		// Calculations 
+		double regTotal = regCost + (i*miles/regMPG) * (gas);
+		double hybridTotal = hybridCost + (i*miles/hybirdMPG) * (gas);
+		if (regTotal <= hybridTotal) {
+	System.out.println("Cost to own "+ regSplit[0] +" after year " + i + ":" + regTotal + ", for " + hybridSplit[0] +  ": " + hybridTotal );
+	}
+		else if (regTotal > hybridTotal) {
+			System.out.println("Cost to own "+ regSplit[0] +" after year " + i + ":" + regTotal + ", for " + hybridSplit[0] +  ": " + hybridTotal );
+			System.out.println("The "+ hybridSplit[0] +"pays back after 5 years");
+}
+}
+}
+}

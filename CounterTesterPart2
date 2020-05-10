@@ -1,0 +1,20 @@
+
+public class counterTesterPart2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Counter anotherVenue = new Counter();
+		anotherVenue.clickMany(10);
+		anotherVenue.unclickMany(5);
+		numCount=anotherVenue.getValue();
+		System.out.println("Expected anotherVenue: 5");
+		System.out.println("Actual anotherVenue: " + numCount);
+		anotherVenue.reset();
+		anotherVenue.clickMany(3);
+		anotherVenue.unclickMany(4);
+		numCount = anotherVenue.getValue();
+		System.out.println("Expected anotherVenue: -1")
+		Systme.out.println("Actual anotherVenue: " + numCount);
+	}
+
+}

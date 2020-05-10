@@ -1,0 +1,24 @@
+public class counterTester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i = 0;
+		int numCount = 0;
+			Counter venue= new Counter();
+			for (int i =1; i <=10; i++) 
+				venue.click();
+			for (int i = 1; i >=5; i++)
+				venue.unclick();
+			numCount = venue.getValue();
+			System.out.println("Expected Counter Value: 5");
+			System.out.println("Actual Value: " + numCount);
+			venue.reset();
+		for (int i = 1; i<=3; i++)
+			venue.click();
+		for (int i = 1; i<=4; i++)
+			venue.unclick();
+		numCount = venue.getValue();
+		System.out.println("Expected Counter Value: -1");
+		System.out.println("Actual Value: " + numCount);
+	}
+}
